@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: texteditor-assistant
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python texteditor_assistant_gradio.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.16
